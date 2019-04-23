@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #545454;
+}
+.row::after{
+	content: "";
+	display: grid;
+	clear: both;
+}
+body{
+	background-color:#ecf0f1;
+}
+[class*="col-"]{
+	padding: 1%;
+	float: left;
+	height: auto;
+	/* border: 1px solid black; */
+}
+.card.login{
+	width: 50%;
+	margin: 10% auto;
+}
+#sticky-sidebar{
+	height:100%;
+}
