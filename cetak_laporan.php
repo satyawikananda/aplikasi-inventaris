@@ -1,5 +1,10 @@
-<?php include_once 'core/init.php'; ?>
+
+<?php 
+    // layout cetak laporn
+    include_once 'core/init.php'; 
+?>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +23,7 @@
     </style>
 </head>
 <body>
+
     <center>
         <h1>Laporan Inventaris bulan ke</h1>
         <p><?php echo date("d-m-Y"); ?></p>

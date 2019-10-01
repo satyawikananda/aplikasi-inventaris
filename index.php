@@ -7,6 +7,7 @@
 ?>
 
 <?php 
+    // penggunaan if dan switch untuk menentukan include file berdasarkan url
     if(isset($_REQUEST['page'])){
         $page = $_REQUEST['page'];
         switch($page){

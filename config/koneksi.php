@@ -1,4 +1,5 @@
 <?php 
+    // file koneksi dengan database
     class koneksi{
         function __construct(){
             $this->db = new mysqli('localhost','root','','inventaris');
