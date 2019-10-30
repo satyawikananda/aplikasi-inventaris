@@ -1,4 +1,7 @@
-<?php include_once 'public/header.php'; ?>
+<?php
+    // file untuk mengatur pagination halaman
+    include_once 'public/header.php'; 
+?>
 <?php 
 	$perPage = 5;
 	$halaman = '';

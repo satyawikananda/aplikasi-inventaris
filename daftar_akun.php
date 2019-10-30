@@ -1,9 +1,5 @@
 <?php 
-// include header
-    require_once 'public/header.php';
-?>
-<?php 
-// include sidenav
+
     require_once 'public/sidenav.php';
 ?>
 
@@ -75,6 +71,6 @@
 </div>
 
 <?php 
-// include footer
+
     require_once 'public/footer.php';
 ?>
