@@ -2,6 +2,7 @@
 <?php include_once 'public/sidenav.php'; ?>
 
 <?php 
+// file untuk menambah data pada table akun
     if(isset($_POST['tambah'])){
         $nama = $_POST['nama_petugas'];
         $nip  = $_POST['nip'];

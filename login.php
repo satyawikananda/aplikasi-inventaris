@@ -1,5 +1,6 @@
 <?php include_once 'public/header.php'?>
 <?php 
+    // page user pertama login, setelah memasukan username dan password akan di direct ke page selanjutnya
     if(isset($_POST['login'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
