@@ -2,6 +2,7 @@
 <?php include_once 'public/sidenav.php'; ?>
 
 <?php 
+// file untuk menambah data pada table barang
     if(isset($_POST['tambah'])){
         $kode = $_POST['kode_inventaris'];
         $nama = $_POST['nama'];
