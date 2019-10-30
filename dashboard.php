@@ -1,7 +1,9 @@
 <?php 
+// include header
     require_once 'public/header.php';
 ?>
 <?php 
+// include sidenav
     require_once 'public/sidenav.php';
 ?>
 
@@ -20,6 +22,7 @@
                         <div class="card-body bg-primary">
                             <h4 class="text-white">Jumlah barang</h4>
                             <?php 
+                                //mengambil data kemudian dijumlahkan 
                                 $data = $db->sum('stok','jumlah','tb_inventaris');
                                 foreach($data as $row){
                                     if($row['jumlah'] > 0){
@@ -35,6 +38,7 @@
                         <div class="card-body bg-success">
                             <h4 class="text-white">Jumlah pengguna</h4>
                             <?php 
+                            //mengambil data kemudian dijumlahkan
                                 $data = $db->count('jumlah','tb_petugas');
                                 foreach($data as $row){
                                     if($row['jumlah'] > 0){
@@ -50,6 +54,7 @@
                         <div class="card-body bg-white">
                             <h4>Jumlah barang pinjam</h4>
                             <?php 
+                            //mengambil data kemudian dijumlahkan
                                 $id = $_SESSION['id_petugas'];
                                 $data = $db->sumPinjam('jumlah','jumlah','tb_peminjaman',"id_pegawai='$id'");
                                 foreach($data as $row){
@@ -127,5 +132,6 @@
 </div>
 
 <?php 
+// include footer
     require_once 'public/footer.php';
 ?>
